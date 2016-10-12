@@ -6,7 +6,7 @@
                 var that = this;
                 $.getJSON("/photo/output.json", function (data) {
                     that.render(that.page, data);
-
+					alert(data);
                     that.scroll(data);
                 });
             },
